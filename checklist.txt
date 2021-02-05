@@ -1,0 +1,6 @@
+THIS IS A PROJECT CHECKLIST
+
+[] Add login form
+[] Setup DB instance for superficial data storage
+[] more animation, logo bounce and move to set state (maybe enduring transitions)
+[] basic boiler plate react message board (similar to coding garden twitter clone.)
