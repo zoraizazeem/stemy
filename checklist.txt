@@ -1,4 +1,7 @@
 THIS IS A PROJECT CHECKLIST
+[] Get Nedb from npm 
+[] initialise the database
+
 
 [] Add login form
 [] Setup DB instance for superficial data storage
