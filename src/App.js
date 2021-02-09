@@ -1,22 +1,23 @@
-
-import './App.css';
-import { Component } from 'react';
-import { MyHeader } from './Header';
-const Datastore = require('nedb');
-
-const database = new Datastore({ filename: "./database.db", autoload: true });
-database.loadDatabase();
-database.insert({ name: 'Tester', status: '😇'})
-
+import "./css/App.css";
+import { Component } from "react";
+import { MyHeader } from "./components/Header";
+import Nav from "./components/Nav";
 
 class App extends Component {
-  render(){
-  return (
-    <div className = "App">
-      <MyHeader/>
-    </div>
-  );
-;}
+  render() {
+    return (
+      <div className="App">
+        <Nav />
+        <MyHeader />
+      </div>
+    );
+  }
 }
+
+const Home = () => (
+  <div>
+    <h1>Home page</h1>
+  </div>
+);
 
 export default App;
