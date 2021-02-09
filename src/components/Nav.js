@@ -17,7 +17,10 @@ export default class Nav extends Component {
           <a href="#contact">Contact</a>
         </li>
         <li >
-          <a href="#about">About</a>
+          <a href="about">About</a>
+        </li>
+        <li >
+          <a href="about">Sign in / Register</a>
         </li>
       </ul>
     );

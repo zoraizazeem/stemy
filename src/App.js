@@ -1,22 +1,31 @@
 import "./css/App.css";
 import { Component } from "react";
-import { MyHeader } from "./components/Header";
+import logo from "./logo.png"
 import Nav from "./components/Nav";
+import About from "./components/About"
+
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
+      <Router>
       <div className="App">
         <Nav />
-        <MyHeader />
+        <Switch>
+          <Route path = "/" exact component = {Home}></Route>
+          <Route path="/about" component = {About} />
+        </Switch>
       </div>
+      </Router>
     );
   }
 }
 
 const Home = () => (
   <div>
-    <h1>Home page</h1>
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>To Keep</p>
   </div>
 );
 
