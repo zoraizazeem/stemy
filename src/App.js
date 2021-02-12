@@ -1,10 +1,11 @@
 import "./css/App.css";
 import { Component } from "react";
-import logo from "./logo.png"
+import logo from "./logo2_0.png"
 import Nav from "./components/Nav";
 import About from "./components/About"
 
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Login from "./components/Login";
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <Switch>
           <Route path = "/" exact component = {Home}></Route>
           <Route path="/about" component = {About} />
+          <Route path="/login" component={Login}></Route>
         </Switch>
       </div>
       </Router>

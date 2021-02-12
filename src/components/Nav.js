@@ -6,7 +6,7 @@ export default class Nav extends Component {
     return (
       <ul>
         <li>
-          <a class="active" href="#home">
+          <a class="active" href="/">
             Home
           </a>
         </li>
